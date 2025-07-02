@@ -27,7 +27,7 @@ class Line:
     def __init__(self, start_point, end_point, lenght: float):
         self.start_point = start_point
         self.end_point = end_point
-        self.lenght = lenght
+        self.lenght = start_point.compute_distance(end_point)
 
     def get_start_point(self):
         return self.start_point
